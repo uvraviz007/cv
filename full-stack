@@ -1,0 +1,307 @@
+%-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Ravi Kumar Sharma} % Your Name
+\newcommand{\course}{Bachelor of Technology} % Your Program
+\newcommand{\roll}{20223204} % Your Roll No.
+\newcommand{\phone}{9315594490} % Your Phone Number
+\newcommand{\emaila}{ravi.sharma172126@gmail.com} %Email 1
+\newcommand{\emailb}{ravi.20223204@mnnit.ac.in} %Email 2
+
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+
+\parbox{2.35cm}{%
+\includegraphics[width=2cm,clip]{MNNIT logo.jpg}
+}
+\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +91-\phone}\\
+  {Roll No.: \220223204} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+  \course &  \href{mailto:\emailb}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emailb}}\\
+  {Computer science and Engineering} &  \href{https://github.com/uvraviz}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub Profile}} \\
+  {Motilal Nehru National Institute of Technology Allahabad, Prayagraj} & \href{https://www.linkedin.com/in/ravi-sharma-6b5b42235}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn Profile}}
+\end{tabularx}
+}
+% \parbox{3.0cm}{%
+% \flushright \includegraphics[width=2cm,clip]{nitp_logo.png}
+% }
+
+
+
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Motilal Nehru National Institute Of Technology Allahabad, Prayagraj}{CGPA: 7.88
+      }
+      {Computer Science And Engineering}{2022-Present}
+    \resumeSubheading
+      {Escorts World School,Kanpur}{Percentage:93}
+      {Intermediate, CBSE}{2020-2021}
+    \resumeSubheading
+      {Escorts World School,Kanpur}{Percentage:96}
+      {High School, CBSE}{2018-2019}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+
+
+
+%-----------EXPERIENCE-----------------
+% \section{\textbf{Experience}}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Company Name}{City}
+%       {Your Role}{Event dates}
+%       \vspace{-2.0mm}
+%       \resumeItemListStart
+%     \item {Work description line 1}
+%     \item {Work description line 2}
+%     \resumeItemListEnd
+    
+%     \vspace{-3.0mm}
+    
+%     \resumeSubheading
+%       {Company Name}{City}
+%       {Your Role}{Event dates}
+%       \vspace{-2.0mm}
+%       \resumeItemListStart
+%     \item {Work description line 1}
+%     \item {Work description line 2}
+%     \resumeItemListEnd
+      
+%   \resumeSubHeadingListEnd
+% \vspace{-8.5mm}
+
+
+
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+
+\resumeProject
+      {FinTrack : \href{https://github.com/uvraviz007/splitwise}{Github Link}} % Project Name
+  {\parbox[t]{0.95\linewidth}{
+    A scalable MERN stack-based expense-sharing platform with JWT authentication, RESTful APIs, and a responsive UI,\\
+    enabling users to manage group expenses, track balances, and simplify settlements in real-time.
+  }} % Description
+  {} % Event Dates
+
+\vspace{3mm} % Added space after the description and before the itemize list
+
+\begin{itemize}[leftmargin=*, \itemsep=0em]
+  \item \textbf{Tools \& technologies used:} MongoDb, Express.js, React.js, Node.js, Java Script, Postman
+  \item Implemented RESTful APIs using Express.js to facilitate dynamic routing for group-specific expense management and user interactions.
+  \item Developed real-time expense updates and balance calculations using a responsive React.js frontend, enhancing collaborative financial tracking.
+  \item Facilitated simplified peer-to-peer settlements by providing clear debt visualizations and payment recording features within groups.
+
+\end{itemize}
+\vspace{-2mm}
+
+\resumeProject
+      {OneVote : \href{https://github.com/uvraviz007/voting_machine}{ Github Link}} % Project Name
+  {\parbox[t]{0.95\linewidth}{
+    Engineered a robust Online Voting System using MERN stack, facilitating secure user authentication, role-based access control, and dynamic vote tallying for a streamlined election process.
+  }} % Description
+  {} % Event Dates
+
+\vspace{3mm} % Added space after the description and before the itemize list
+
+\begin{itemize}[leftmargin=*, \itemsep=0em]
+  \item \textbf{Tools \& technologies used:} MongoDb, Express.js, React.js, Node.js, Java Script, Postman
+  \item Secure & Unique Action: Each vote is tied to an authenticated user (via JWT) and a specific candidate. The system ensures that a user can cast only one vote, preventing duplicate submissions through an isVoted flag on the user's profile.
+  \item Real-time Impact: Upon successful casting, the vote is recorded against the chosen candidate, immediately incrementing their voteCount and updating the user's isVoted status in the MongoDB database, contributing to real-time election results.
+ .
+\end{itemize}
+\vspace{-2mm}
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills and Interests}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Python, Java, Java Script, SQL} \\
+     \textbf{Developer Tools}{: VS Code, Git/Github } \\
+     \textbf{Frameworks}{: React.js , Express.js , Node.js } \\
+     \textbf{Cloud/Databases}{: MongoDB, Google Cloud } \\
+     % \textbf{Soft Skills}{: } \\
+     \textbf{Areas of Interest}{: Data Structutre And Algorithm, Oops, Operating System, Computer Networks,SQL, DBMS, Low Level Design, High Level Design } \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+\section{\textbf{Coding Platform}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{LeetCode: } % Position
+    {  Solved 400+ problems} %Club,Event
+    {} %Tenure Period
+\resumePOR{GFG:  } % Position
+    {3* at GFG, Solved 300+ problems} %Club,Event
+    {} %Tenure Period
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+
+
+
+%-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Exceed 3.0 } % Award
+    {My team was able to achieved rank in top 10 Among 170 teams, it was conducted by Wabtec} % Event
+    % {} %Event Year
+    
+\resumePOR{Code Start 7.0} % Award
+    {We were able to achieved 7th rank among 50 teams, it was conducted by CC club MNNIT } % Event
+    {} %Event Year
+    % \resumePOR{CodeChef Starters 125} % Award
+    % {I was able to achieve 600 rank among 2000 people.} % Event
+    {} %Event Year
+    % \resumePOR{Achievement } % Award
+    % {description} % Event
+    % {Event dates} %Event Year
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+
+
+%-------------------------------------------
+\end{document}
